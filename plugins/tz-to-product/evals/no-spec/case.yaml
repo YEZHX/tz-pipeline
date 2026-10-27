@@ -1,0 +1,6 @@
+schema_version: "1.1"
+name: no-spec
+expected_outcome: |
+  The run inventories the five files, maps facts to their sources, flags that the owner's 50 orders a day contradicts the data, drafts a one-page spec around unanswered evening WhatsApp messages with source references and gaps marked, asks the user to confirm it, and writes no code.
+context:
+  scaffold_script: place-files.sh
