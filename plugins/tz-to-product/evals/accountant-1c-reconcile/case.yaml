@@ -1,0 +1,4 @@
+schema_version: "1.1"
+name: accountant-1c-reconcile
+expected_outcome: |
+  The reply recommends running locally on the accountant's computer because statements must not leave for the cloud, proposes deterministic code for the matching instead of an LLM agent, asks for sample files and stops without building anything.

@@ -1,0 +1,4 @@
+schema_version: "1.1"
+name: clinic-whatsapp-bot
+expected_outcome: |
+  The reply restates the problem with a measurable goal or asks for one, asks where the bot should run with a reasoned recommendation, proposes a solution type, lists the missing facts (CRM and its API, metric, escalation), asks for real chat examples and stops without building anything.

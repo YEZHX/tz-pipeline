@@ -1,0 +1,4 @@
+schema_version: "1.1"
+name: yoga-studio-site
+expected_outcome: |
+  The reply recommends a separate, publicly hosted site because it must be found in Google, says that AI is not needed for the core of the product, asks the few missing facts and stops without building.
