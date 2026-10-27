@@ -13,11 +13,11 @@
 В терминале, один раз на машину:
 
 ```bash
-claude plugin marketplace add <github-user>/tz-pipeline
+claude plugin marketplace add YEZHX/tz-pipeline
 claude plugin install tz-to-product@tz-pipeline
 ```
 
-То же внутри сессии Claude Code: `/plugin marketplace add <github-user>/tz-pipeline`, затем `/plugin install tz-to-product@tz-pipeline`.
+То же внутри сессии Claude Code: `/plugin marketplace add YEZHX/tz-pipeline`, затем `/plugin install tz-to-product@tz-pipeline`.
 
 ### Доступ к приватному репозиторию
 
@@ -29,7 +29,7 @@ claude plugin install tz-to-product@tz-pipeline
 Проверка — эта команда должна пройти без запроса пароля:
 
 ```bash
-git ls-remote https://github.com/<github-user>/tz-pipeline
+git ls-remote https://github.com/YEZHX/tz-pipeline
 ```
 
 На тарифе Team или Enterprise плагин можно раздать без git: Organization settings → Plugins & skills на claude.ai.
