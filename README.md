@@ -19,20 +19,7 @@ claude plugin install tz-to-product@tz-pipeline
 
 То же внутри сессии Claude Code: `/plugin marketplace add YEZHX/tz-pipeline`, затем `/plugin install tz-to-product@tz-pipeline`.
 
-### Доступ к приватному репозиторию
-
-Репозиторий приватный. Claude Code запускает `git` без запроса пароля и берёт учётные данные, которые уже сохранены на машине. Поэтому до установки каждому нужно две вещи:
-
-1. **Доступ на чтение** к репозиторию на GitHub: владелец добавляет человека в Settings → Collaborators или в команду организации.
-2. **Сохранённые учётные данные git.** Проще всего через GitHub CLI: `gh auth login`, затем `gh auth setup-git`. Подойдёт и SSH-ключ, добавленный в GitHub.
-
-Проверка — эта команда должна пройти без запроса пароля:
-
-```bash
-git ls-remote https://github.com/YEZHX/tz-pipeline
-```
-
-На тарифе Team или Enterprise плагин можно раздать без git: Organization settings → Plugins & skills на claude.ai.
+Репозиторий публичный: аккаунт GitHub и доступы для установки не нужны.
 
 ### Обновление
 
@@ -44,7 +31,7 @@ claude plugin update tz-to-product@tz-pipeline
 
 ### Выпуск новой версии
 
-Поднимите `version` в `plugins/tz-to-product/.claude-plugin/plugin.json` и запушьте. Без смены версии коллеги остаются на своей копии и изменений не получат. Файл `tz-to-product.skill` пересоберите из `plugins/tz-to-product/skills/tz-to-product`.
+Поднимите `version` в `plugins/tz-to-product/.claude-plugin/plugin.json` и запушьте. Без смены версии пользователи остаются на своей копии и изменений не получат. Файл `tz-to-product.skill` пересоберите из `plugins/tz-to-product/skills/tz-to-product`.
 
 ## Как пользоваться
 
@@ -75,3 +62,7 @@ claude plugin eval plugins/tz-to-product
 ```
 
 `plugin eval` прогоняет три ТЗ (стоматология, сверка 1С, сайт йога-студии) со скиллом и без него. Прогоны идут на модели и оплачиваются.
+
+## Лицензия
+
+MIT — см. [LICENSE](LICENSE).

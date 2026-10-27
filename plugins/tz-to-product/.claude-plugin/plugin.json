@@ -5,5 +5,7 @@
   "author": {
     "name": "Ербота"
   },
+  "repository": "https://github.com/YEZHX/tz-pipeline",
+  "license": "MIT",
   "keywords": ["tz", "mvp", "agent", "pipeline", "extella"]
 }
